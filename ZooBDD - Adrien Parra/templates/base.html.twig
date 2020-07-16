@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Le Zoo du Rattrapages{% endblock %}</title>
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+    
+    <nav>
+        
+        <div class="nav-wrapper #6a1b9a purple darken-3">
+            <a href="#" class="brand-logo #6a1b9a purple darken-3">Nouvelle Espaces</a>
+                
+        </div>
+
+    </nav>
+    
+    <div class="container">
+        
+        {% block body %}{% endblock %}
+        
+    </div>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ titre }}{% endblock %}
+
+{% block body %}
+<h1>{{ titre }}</h1>
+
+{# ici le formulaire :) #}
+
+{# {{form(formulaire)}} #}
+
+{{form_start(formulaire, {'attr' : {'novalidate' : 'novalidate'}}) }}
+{{form_widget(formulaire)}}
+{{form_end(formulaire)}}
+
+{% endblock %}
